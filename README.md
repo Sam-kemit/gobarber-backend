@@ -85,7 +85,7 @@ Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomn
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/Sam-kemit/gobarber-backend.git && cd gobarber-api
+$ git clone https://github.com/Sam-kemit/gobarber-backend.git && cd gobarber-backend
 ```
 
 **Follow the steps below**
