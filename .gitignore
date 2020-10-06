@@ -1,0 +1,10 @@
+node_modules
+.idea/
+.vscode/
+build/
+temp/
+
+src/config/auth.ts
+
+tmp/*
+!tmp/.gitkeep
