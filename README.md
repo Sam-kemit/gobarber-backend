@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  GoBarber project
+  Node.js application for GoBarber project
 </h3>
 
 <p align="center">The best way to schedule your service!</p>
@@ -45,7 +45,7 @@ Customers can choose the best time available to them.
 
 Providers can see all their appointments, manage the times, also see if one client canceled the schedule.
 
-To see the **web client**, click here: [GoBarber Web](https://github.com/EliasGcf/gobarber-web)<br />
+To see the **web client**, click here: [GoBarber Web](https://github.com/Sam-kemit/gobarber-frontend)<br />
 To see the **mobile client**, click here: [GoBarber Mobile](https://github.com/EliasGcf/gobarber-mobile)
 
 ## 🚀 Technologies
@@ -132,14 +132,14 @@ $ yarn dev:server
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork EliasGcf/gobarber-api
+$ gh repo fork Sam-kemit/gobarber-backend
 ```
 
 **Follow the steps below**
 
 ```bash
 # Clone your fork
-$ git clone your-fork-url && cd gobarber-api
+$ git clone your-fork-url && cd gobarber-backend
 
 # Create a branch with your feature
 $ git checkout -b my-feature
