@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: 12.x
         
-        # Install all dependency NPM/YARN
+      # Install all dependency NPM/YARN
       - name: Install dependencies
         run: yarn
       
-        # Execute a build
+      # Execute a build
       - name: Run build
         run: yarn build
 
@@ -43,7 +43,7 @@ jobs:
       - name: Install dependency on Digital Ocean
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
@@ -55,7 +55,7 @@ jobs:
       - name: Run migrations on Digital Ocean
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
@@ -67,7 +67,7 @@ jobs:
       - name: Restart Node.js server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
